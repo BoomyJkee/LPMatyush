@@ -1,0 +1,23 @@
+GHCi, version 7.8.3: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> :cd C:\Users\Антон\Desktop
+Prelude> :load "LabSPO.hs"
+[1 of 1] Compiling LabSPO           ( LabSPO.hs, interpreted )
+Ok, modules loaded: LabSPO.
+*LabSPO> myDiv 10 2
+(5,0)
+*LabSPO> myDiv 11 3
+(3,2)
+*LabSPO> myDiv (-2) (-2)
+(1,0)
+*LabSPO> myDiv (-6) 3
+(-2,0)
+*LabSPO> myDiv 15 (-3)
+(-5,0)
+*LabSPO> myDiv 20 0
+*** Exception: Деление на 0 недопустимо!
+*LabSPO> :t (myDiv)
+(myDiv) :: Integer -> Integer -> (Integer, Integer)
+*LabSPO> 
